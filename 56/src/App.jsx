@@ -2,13 +2,14 @@ import React from 'react'
 import {Navbar,Footer} from './Components'
 import {About, Auth, Cart, Contact, Home, NotFound, ProductDetails, Products, Profile} from './Pages'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { Box } from '@mui/material'
+import { Box, CssBaseline } from '@mui/material'
 import { useSelector } from 'react-redux'
 import { Toaster } from 'react-hot-toast'
 export default function App() {
   const {token}=useSelector(state=>state.auth)
   return (
     <>
+    <CssBaseline/>
     <Navbar/>
     <Box component={'main'} minHeight={'80vh'}>
     <Routes>
