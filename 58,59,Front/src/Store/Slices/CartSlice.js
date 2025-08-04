@@ -9,9 +9,9 @@ const cartSlice=createSlice({
     reducers:{
         add:(state,action)=>{
             let add=false
-            state.totalPrice=state.totalPrice+ +action.payload.attributes.price
+            state.totalPrice=state.totalPrice+ +action.payload.price
             state.list=state.list?.map(e=>{
-                if(e.id==action.payload.id){
+                if(e._id==action.payload._id){
                     e.cartQuantity=e.cartQuantity+1
                     add=true
                 }
@@ -22,9 +22,9 @@ const cartSlice=createSlice({
             }
         },
         remove:(state,action)=>{
-            state.totalPrice=state.totalPrice - action.payload.attributes.price
+            state.totalPrice=state.totalPrice - action.payload.price
             state.list=state.list?.filter(e=>{
-                if(e.id==action.payload.id){
+                if(e._id==action.payload._id){
                     e.cartQuantity=e.cartQuantity-1
                     if(e.cartQuantity==0){
                         return false
