@@ -7,8 +7,6 @@ The project simulates a complete online shopping platform where users can browse
 
 The application focuses on clean architecture, scalable state management, and a modern user interface.
 
----
-
 🚀 Core Features
 
 - Dynamic product listing
@@ -19,8 +17,6 @@ The application focuses on clean architecture, scalable state management, and a 
 - Contact section
 - Responsive layout for all devices
 - Structured navigation across the platform
-
----
 
 🛠️ Technologies Used
 
@@ -37,8 +33,6 @@ Backend
 - Express.js
 - RESTful API Integration
 
----
-
 🎨 UI & Styling
 
 The user interface is fully designed using Material UI (MUI), providing a modern, clean, and responsive design system across all pages.
@@ -52,14 +46,9 @@ The user interface is fully designed using Material UI (MUI), providing a modern
 - Full integration between client and server
 - Organized folder structure for maintainability
 
----
-
 👩‍💻 Author
 
 Mobina Zare Doost
 
 ---
 
-📄 License
-
-MIT License
